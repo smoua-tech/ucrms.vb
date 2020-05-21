@@ -10,18 +10,10 @@ Public Class StatementsSQL
     Public sqlcmd As New SqlCommand
     Public sqlda As New SqlDataAdapter
     Dim da As OleDbDataAdapter
-
-    'Public mydatatable As DataTable
     Public sqlquery As String
     Public myitemid As String
-    'Public table As DataTable
     Dim result As Integer
-    'Dim newsqlconn As SqlConnection = DBConn()
-    'Public newsqlconn = New SqlConnection With {
-    '        .ConnectionString = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
-    '    }
     Dim connstring As String = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
-    ' Dim accesstring As String = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
 
     Public Sub LogInToMainForm()
         ManagerForm.Show()
