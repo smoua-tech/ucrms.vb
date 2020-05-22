@@ -7,6 +7,6 @@ Imports System.Windows.Forms
 
 Public Class dbCommandBuilder
     Public Function DBConn() As SqlConnection
-        Return New SqlConnection("server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms")
+        Return New SqlConnection("server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms")
     End Function
 End Class

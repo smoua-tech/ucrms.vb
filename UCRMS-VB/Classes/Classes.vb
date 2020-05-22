@@ -12,7 +12,7 @@ Public Class Publicvariables
     Public myitemid As String
     ReadOnly result As Integer
     ReadOnly newsqlconn As SqlConnection = DBConn()
-    ReadOnly connstring As String = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
+    ReadOnly connstring As String = "server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
 
     Private Sub Autogenerate_id()
         newsqlconn.Open()

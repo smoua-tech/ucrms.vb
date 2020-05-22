@@ -38,15 +38,15 @@
     <UpdateUrl>\\ushers-dfs-03\software%24\Publishing\ECRMS Install 2\</UpdateUrl>
     <ProductName>Ushers Change Request Management System</ProductName>
     <PublisherName>Ushers Machine and Tool Co Inc.</PublisherName>
-    <MinimumRequiredVersion>1.0.0.45</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.0.70</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>59</ApplicationRevision>
+    <ApplicationRevision>74</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <BootstrapperComponentsUrl>\\ushers-dfs-03\software%24\Publishing</BootstrapperComponentsUrl>
+    <BootstrapperComponentsUrl>\\ushers-dfs-03\software%24\Publishing\dotNET Framework</BootstrapperComponentsUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -267,6 +267,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -446,6 +447,9 @@
     <None Include="packages.config" />
     <None Include="Resources\Email_Sig_Logo.png" />
     <Content Include="MetroFramework.txt" />
+    <Content Include="MSAccessDBEng2010\license.txt" />
+    <Content Include="MSAccessDBEng2010\package.xml" />
+    <Content Include="MSAccessDBEng2010\product.xml" />
     <Content Include="ushers_logo_n_SQc_icon.ico" />
     <None Include="Resources\Untitled-12.png" />
     <None Include="Resources\Untitled-9.png" />
@@ -507,6 +511,26 @@
       <PublishState>Include</PublishState>
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MSAccessDBEng2010\package.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="MSAccessDBEng2010\product.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>
   <ItemGroup />

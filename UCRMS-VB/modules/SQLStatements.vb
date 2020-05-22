@@ -13,7 +13,7 @@
 '    Dim result As Integer
 '    Dim sqlconn As SqlConnection = DBConn()
 '    Public newsqlconn = New SqlConnection With {
-'            .ConnectionString = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
+'            .ConnectionString = "server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
 '        }
 
 '#Region "LOADS ECR ITEMS INTO DATDGRIDVIEW"

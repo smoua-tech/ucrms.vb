@@ -13,7 +13,7 @@ Public Class StatementsSQL
     Public sqlquery As String
     Public myitemid As String
     Dim result As Integer
-    Dim connstring As String = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
+    Dim connstring As String = "server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
 
     Public Sub LogInToMainForm()
         ManagerForm.Show()
@@ -4022,7 +4022,7 @@ Public Class StatementsSQL
             ElseIf newsqlconn.State = ConnectionState.Open Then
             End If
 
-            sqlquery = "SELECT * FROM (SELECT id as ID, firstname, lastname, CONCAT_WS(' ', firstname, lastname) as FullName, useremail, usertype as Type, emplid AS EmployeeID " &
+            sqlquery = "SELECT * FROM (SELECT ID, firstname, lastname, (firstname + ' ' + lastname) AS FullName, useremail, usertype AS Type, emplid AS EmployeeID " &
             " FROM useraccounts) base WHERE FullName = @FullName And EmployeeID = @EmployeeID"
 
             sqlcmd = New SqlCommand(sqlquery, newsqlconn)
@@ -4104,7 +4104,7 @@ Public Class StatementsSQL
                 .MainMenu_ECRbtn.Visible = False
                 .MainMenu_MyECRbtn.Visible = True
                 .MainMenu_Logbtn.Visible = True
-                .MainMenu_AIbtn.Visible = True
+                .MainMenu_AIbtn.Visible = False
                 .MainMenu_SharePoint.Visible = True
                 .MainMenu_FlowData.Visible = True
                 .MainMenu_btnSettings.Visible = True
@@ -4114,6 +4114,17 @@ Public Class StatementsSQL
                 .MainMenu_Settingsbtn_EmailGroup.Visible = False
                 .MainMenu_Reportsbtn.Visible = True
                 .MainMenu_LogOutbtn.Visible = True
+            Else
+                .MenuStrip1.Visible = False
+                .MainMenu_ECRbtn.Visible = False
+                .MainMenu_AIbtn.Visible = False
+                .MainMenu_MyECRbtn.Visible = False
+                .MainMenu_SharePoint.Visible = False
+                .MainMenu_btnSettings.Visible = False
+                .MainMenu_Reportsbtn.Visible = False
+                .MainMenu_Logbtn.Visible = False
+                .MainMenu_LogOutbtn.Visible = True
+                .BtnEditViewECRPage.Visible = False
             End If
         End With
 

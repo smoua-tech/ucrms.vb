@@ -22,9 +22,9 @@ Public Class ManagerForm
     Public Property ImageScalingSize As Size
     'Dim sqlcon As SqlConnection = DBConn()
     'Public sqlconn = New SqlConnection With {
-    '        .ConnectionString = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
+    '        .ConnectionString = "server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
     '    }
-    Dim connstring As String = "server=umtgv-db-01-dev.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
+    Dim connstring As String = "server=umt-dev-01.umt.local;User Id=db.app.svc;password=64JL2zCTBDEojhB1MfsW;database=ucrms"
 
 #Region "MAIN FORM LOADING"
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
